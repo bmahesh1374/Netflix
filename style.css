@@ -87,21 +87,21 @@
 }
 
 #card-1 {
-    background-color: darkred;
+    background-color: rgb(26, 24, 72);
     color: white;
     padding: 15px;
     border-radius: 10px;
 }
 
 #card-2 {
-    background-color: darkred;
+    background-color: rgb(26, 24, 72);
     color: white;
     padding: 15px;
     border-radius: 10px;
 }
 
 #card-3 {
-    background-color: darkred;
+    background-color: rgb(26, 24, 72);
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -109,7 +109,7 @@
 
 #card-4 {
     
-    background-color: darkred;
+    background-color: rgb(26, 24, 72);
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -130,18 +130,22 @@
     
 }
 
-
+.bg-color{
+    background-color: #000;
+}
 
 
 body {
   background: #000;
   color: white;
   font-family: Arial, sans-serif;
+  background-color: #000    ;
 }
 
 .section-title {
   margin-left: 50px;
   font-size: 26px;
+  color: white;
 }
 
 .testimonial-row {
@@ -189,6 +193,7 @@ body {
 
 .join {
     margin:10px 50px;
+    color: white;
 }
 
 .para {
@@ -236,5 +241,6 @@ details[open] summary::after {
 }
 
 .freq {
-    margin-left: 50px;
+    margin-left: 52px;
+    color: white;
 }
