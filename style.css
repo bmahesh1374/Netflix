@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+.bg-color {
+  background-color: #000;
+}
 
 .navbar {
   height: 600px;
@@ -14,132 +16,113 @@
 }
 
 .shows {
-
-    color: white;
-    
+  color: white;
 }
 
-.shows h1{
-    font-weight: bold;
+.shows h1 {
+  font-weight: bold;
 }
 
 .shows input {
-    padding: 6px;
-    width: 400px;
-    font-size: 19px;
+  padding: 6px;
+  width: 400px;
+  font-size: 19px;
 }
 
 .shows button {
-    padding: 10px 18px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-radius: 7px;
+  padding: 10px 18px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
 }
 
-
-.title h1{
-    margin: -280px 50px;
-    color: red;
-    font-weight: bold;
+.title h1 {
+  margin: -280px 50px;
+  color: red;
+  font-weight: bold;
 }
-
-
-
 
 .signin {
-    display: flex;
-    align-items: center;
-    margin-top: -500px;
-    margin-right: 38px;
-    gap: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: -500px;
+  margin-right: 38px;
+  gap: 4px;
 }
 
-.signin button{
-    padding: 4px 10px;
-    border-radius: 7px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
+.signin button {
+  padding: 4px 10px;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
 
-.signin select{
-    border-radius: 3px;
-    padding: 3px;
-    
+.signin select {
+  border-radius: 3px;
+  padding: 3px;
 }
 
-
-
-.carousel-inner img{
-    width: 500px;
-    height: 500px;
+.carousel-inner img {
+  width: 500px;
+  height: 500px;
 }
 
 .cards {
-    width: 1150px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 20px auto;
-    gap: 10px;
-    
+  width: 1150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 20px auto;
+  gap: 10px;
 }
 
 #card-1 {
-    background-color: rgb(26, 24, 72);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
+  background-color: rgb(26, 24, 72);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #card-2 {
-    background-color: rgb(26, 24, 72);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
+  background-color: rgb(26, 24, 72);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #card-3 {
-    background-color: rgb(26, 24, 72);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
+  background-color: rgb(26, 24, 72);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #card-4 {
-    
-    background-color: rgb(26, 24, 72);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    
-}   
-
-.icon-div{
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
+  background-color: rgb(26, 24, 72);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
 
+.icon-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
 
 .icon {
-    width: 50px;
-    height: 50px;
-    text-align: right;
-    
+  width: 50px;
+  height: 50px;
+  text-align: right;
 }
-
-.bg-color{
-    background-color: #000;
-}
-
 
 body {
   background: #000;
   color: white;
   font-family: Arial, sans-serif;
-  background-color: #000    ;
+  background-color: #000;
 }
 
 .section-title {
@@ -181,66 +164,142 @@ body {
   left: -10px;
   font-size: 80px;
   font-weight: bold;
-   color: black;             
-  -webkit-text-stroke: 3px white; 
+  color: black;
+  -webkit-text-stroke: 3px white;
   z-index: 1;
 }
 
 .treding {
-    width: 1200px;
-    margin: 5px auto;
+  width: 1200px;
+  margin: 5px auto;
 }
 
 .join {
-    margin:10px 50px;
-    color: white;
+  margin: 10px 50px;
+  color: white;
 }
 
 .para {
-
-    text-align: center;
-    font-size: 17px;
+  text-align: center;
+  font-size: 17px;
 }
 
 .faq-container {
-    width: 90%;
-    margin: 15px auto;
+  width: 90%;
+  margin: 15px auto;
 }
 
 details {
-    background-color: #2d2d2d;
-    color: white;
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 summary {
-    list-style: none;
-    font-size: 22px;
-    cursor: pointer;
-    position: relative;
+  list-style: none;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
 }
 
 summary::after {
-    content: "+";
-    font-size: 28px;
-    position: absolute;
-    right: 0;
-    top: -18%;
+  content: "+";
+  font-size: 28px;
+  position: absolute;
+  right: 0;
+  top: -18%;
 }
 
 details[open] summary::after {
-    content: "×";
+  content: "×";
 }
 
 .answer {
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 1.6;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .freq {
-    margin-left: 52px;
-    color: white;
+  margin-left: 52px;
+  color: white;
+}
+
+.foot-middle {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.foot-title {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.foot-login button {
+  padding: 12px 18px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.foot-login input {
+  padding: 10px;
+  width: 500px;
+  font-size: 19px;
+  border-radius: 4px;
+}
+
+.foot-help {
+  margin: 20px 68px;
+  color: bisque;
+}
+
+.foot-help a {
+  text-decoration: underline;
+  color: bisque;
+}
+
+.foot-gridC {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.foot-gridC a {
+  color: #f8f2eb9b;
+  text-decoration: none;
+}
+
+.foot-gridC ul {
+  margin-top: 20px;
+}
+
+.foot-option select {
+  border-radius: 3px;
+  padding: 3px 18px;
+  text-align: center;
+}
+
+.foot-option form {
+  margin: 5px 70px;
+}
+
+.foot-end {
+  margin-top: 20px;
+  padding: 10px 72px;
+  padding-bottom: 150px;
+}
+
+.foot-end h6 {
+  color: cornsilk;
+}
+
+.last-item {
+  color: rgb(194, 192, 189);
+  font-size: 13px;
+  margin-top: 20px;
 }
