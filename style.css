@@ -9,47 +9,86 @@
 }
 
 .navbar {
-  height: 600px;
+  position: relative;
+  height: 100vh;
   background-image: url("https://adamlobo.tv/wp-content/uploads/2024/11/Netflix-Image.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
-}
-
-.shows {
   color: white;
 }
+
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+
+.navbar > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.shows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
 
 .shows h1 {
   font-weight: bold;
 }
 
-.shows input {
+.shows input,
+.shows button {
   padding: 6px;
-  width: 400px;
-  font-size: 19px;
+  margin-top: 15px;
 }
 
-.shows button {
-  padding: 10px 18px;
+.shows button{
   background-color: red;
   color: white;
-  font-weight: bold;
-  border-radius: 7px;
 }
 
-.title h1 {
-  margin: -280px 50px;
+@media (min-width: 768px) {
+  .shows input {
+    width: 60%;
+  }
+
+  .shows button {
+    margin-left: 10px;
+    
+    
+    color: white;
+  }
+}
+
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 40px;
   color: red;
   font-weight: bold;
 }
 
 .signin {
+  position: absolute;
+  top: 20px;
+  right: 40px;
   display: flex;
+  gap: 10px;
   align-items: center;
-  margin-top: -500px;
-  margin-right: 38px;
-  gap: 4px;
 }
+
 
 .signin button {
   padding: 4px 10px;
@@ -70,7 +109,8 @@
 }
 
 .cards {
-  width: 1150px;
+  width: 90%;
+  max-width: 1150px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -170,7 +210,8 @@ body {
 }
 
 .treding {
-  width: 1200px;
+  width: 90%;
+  max-width: 1200px;
   margin: 5px auto;
 }
 
@@ -247,7 +288,8 @@ details[open] summary::after {
 
 .foot-login input {
   padding: 10px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   font-size: 19px;
   border-radius: 4px;
 }
@@ -303,3 +345,44 @@ details[open] summary::after {
   font-size: 13px;
   margin-top: 20px;
 }
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 100vh;
+  }
+
+  .shows h1 {
+    font-size: 28px;
+  }
+
+  .shows h5 {
+    font-size: 16px;
+  }
+
+  .shows input {
+    width: 100%;
+  }
+
+  .signin {
+    right: 20px;
+    top: 15px;
+  }
+
+  .title {
+    left: 20px;
+    top: 15px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .foot-gridC {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
